@@ -18,7 +18,7 @@ public class LinearSearchArray {
 		int index = search(arr, key);
 		
 		if(index != -1) {
-			System.out.println(key+"found at the index of"+index);
+			System.out.println(key+" found at the index of "+index);
 		}
 		else {
 			System.out.println("the element is not found");
