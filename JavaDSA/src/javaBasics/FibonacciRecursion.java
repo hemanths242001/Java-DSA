@@ -33,5 +33,12 @@ public class FibonacciRecursion {
         }
         scanner.close();
 	}
+//	int n = 10;
+//	int[] arr = new int[n]; // Creates an array of size 10, initialized to 0 by default.
+//	arr[1] = 1; // Sets the second element (index 1) of the array to 1.
+//	for (int i = 2; i < n; i++) { // Iterates from index 2 to index 9 (n-1).
+//	    arr[i] = arr[i - 1] + arr[i - 2]; // Each element is the sum of the two previous elements.
+//	}
+//	System.out.println(Arrays.toString(arr)); // Prints the array.
 
 }
