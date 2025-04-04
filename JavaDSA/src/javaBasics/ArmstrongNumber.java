@@ -13,10 +13,10 @@ public class ArmstrongNumber {
 			num = num / 10;
 		}
 		if(temp == sum) {
-			System.out.println(num+" is a armstrong number");
+			System.out.println(sum+" is a armstrong number");
 		}
 		else {
-			System.out.println(num+" is not a armstrong number");
+			System.out.println(sum+" is not a armstrong number");
 		}
 	}
 
