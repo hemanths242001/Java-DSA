@@ -13,11 +13,27 @@ public class EvenOrOdd {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Enter the number");
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number: ");
 		int num = sc.nextInt();
 		oddOrEven(num);
-		sc.close();
+
+        while(true)
+        {
+            if(num>0)
+            {
+                System.out.println("Enter again: ");
+                num = sc.nextInt();
+                oddOrEven(num);
+            }
+            else
+            {
+                System.out.println("Number is negative! System Shutdown!");
+                System.exit(1);
+                sc.close();
+            }
+
+        }
 	}
 
 }
