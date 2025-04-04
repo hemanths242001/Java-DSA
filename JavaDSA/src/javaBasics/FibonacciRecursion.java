@@ -16,6 +16,7 @@ public class FibonacciRecursion {
 		fibonacciCache[n] = nthFibonacciNumber;
 		if(fibonacciCache[n] != 0) {
 			return fibonacciCache[n];
+			//Primitives can never be assigned 'null', instead, they will default to 0.
 		}
 		return nthFibonacciNumber;
 	}
@@ -28,7 +29,7 @@ public class FibonacciRecursion {
 //        fibonacciCache = new long [n + 1];
         
         for(int i=0; i<n; i++) {
-        	System.out.println(fib(i));
+        	System.out.print(fib(i)+" ");
         }
         scanner.close();
 	}
