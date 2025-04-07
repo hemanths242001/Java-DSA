@@ -1,12 +1,13 @@
 package javaBasics;
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class FactorialProgram {
 	
-	static int factorialNormal(int n) {
-		int res = 1;
+	static BigInteger factorialNormal(int n) {
+		BigInteger res = BigInteger.ONE;
 		for(int i=2; i<=n; i++) {
-			res = res * i;
+			res = res.multiply(BigInteger.valueOf(i));
 		}
 		return res;
 	}
