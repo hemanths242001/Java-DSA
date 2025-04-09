@@ -1,10 +1,11 @@
 package javaDSA;
+import java.util.Scanner;
 
 public class DeletingElementArray {
 	static int findElement(int arr[], int n, int key){
 	    for(int i=0; i<n; i++) {
 	    	if(arr[i] == key) {
-	    		return i; // it returns 2
+	    		return i; // it returns position
 	    	}
 	    }
 	    return -1;
@@ -30,13 +31,16 @@ public class DeletingElementArray {
 	 public static void main(String args[]){
 		 int arr[] = {10,20,30,40,50};
 	     int n = arr.length;
-	     int key = 50;
-	     
-	     //before deletion of 30
-	     
 	     for(int x : arr) {
 	    	 System.out.print(x+" ");
 	     }
+	     System.out.println("");
+	     Scanner sc = new Scanner(System.in);
+	     System.out.println("enter the key to delete");
+	     int key = sc.nextInt();
+	     
+	     //before deletion
+	     
 	     
 	     n = deleteElement(arr, n, key);
 	     
@@ -45,6 +49,7 @@ public class DeletingElementArray {
 	     for(int i=0; i<n; i++) {
 	    	 System.out.print(arr[i]+" ");
 	     }
+	     sc.close();
 	 }
 }
 
