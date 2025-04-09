@@ -4,7 +4,7 @@ public class ReverseArray {
 
 	public static void main(String[] args) {
 		int arr[] = {12,8,56,23,34};
-		
+		// two pointers
 		int left = 0, right = arr.length - 1;
 		while (left < right) {
 		    // Swap elements
