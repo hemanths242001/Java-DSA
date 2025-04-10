@@ -48,7 +48,7 @@ public class MergeSortArray {
 		int leftSize = arr.length/2;
 		int rightSize = arr.length - leftSize;
 		int i=0,l=0,r=0;
-		
+		// filling first half 
 		while(l < leftSize && r < rightSize) {
 			if(leftArray[l] < rightArray[r]) {
 				arr[i] = leftArray[l];
@@ -61,6 +61,7 @@ public class MergeSortArray {
 				r++;
 			}
 		}
+		// filling second half
 		while(l < leftSize) {
 			arr[i] = leftArray[l];
 			i++;
