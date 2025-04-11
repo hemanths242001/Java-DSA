@@ -16,6 +16,7 @@ public class QuickSortArray {
 		if(end <= start) {
 			return;
 		}
+		
 		int pivot = partition(arr, start, end);
 		quickSort(arr, start, pivot-1);
 		quickSort(arr, pivot+1, end);
