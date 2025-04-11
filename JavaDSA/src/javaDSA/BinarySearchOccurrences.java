@@ -4,7 +4,6 @@ public class BinarySearchOccurrences {
 
 	public static void main(String[] args) {
 		int arr[] = {2, 4, 4, 4, 4, 6, 8};
-		System.out.println("Enter the target element");
 		int target = 4;
 		
 		System.out.println("First Occurrence: "+firstOccurrence(arr, target));
