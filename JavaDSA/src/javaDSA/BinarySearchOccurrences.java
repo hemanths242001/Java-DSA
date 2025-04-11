@@ -32,7 +32,7 @@ public class BinarySearchOccurrences {
 				high = middle - 1;
 			}
 		}
-		return result; // if it is not found
+		return result; 
 	}
 	public static int lastOccurrence(int arr[], int target) {
 		
@@ -55,6 +55,6 @@ public class BinarySearchOccurrences {
 				low = middle + 1;
 			}
 		}
-		return result; // if it is not found
+		return result; 
 	}
 }
