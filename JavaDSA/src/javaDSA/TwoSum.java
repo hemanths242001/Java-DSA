@@ -1,10 +1,12 @@
 package javaDSA;
+import java.util.Arrays;
 
 public class TwoSum {
 
 	public static void main(String[] args) {
-		int arr[] = {2,3,9,23,54};
-		int target = 5;
+		int arr[] = {3,2,4};
+		int target = 6;
+		Arrays.sort(arr);
 		
 		int result[] = twoSumIndices(arr, target);
 		
