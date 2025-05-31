@@ -4,9 +4,8 @@ import java.util.Arrays;
 public class TwoSum {
 
 	public static void main(String[] args) {
-		int arr[] = {3,2,4};
+		int arr[] = {2,3,4};
 		int target = 6;
-		Arrays.sort(arr);
 		
 		int result[] = twoSumIndices(arr, target);
 		
